@@ -10,7 +10,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/anagha-m01",
   github: "https://github.com/anagha-m01",
   summary:
-    "AI/ML Engineer building practical AI applications, machine learning solutions, and backend systems with Python.",
+    "AI/ML Engineer experienced in agentic AI applications, multi-agent LLM workflows with LangGraph orchestration, RAG systems, and production backend services using Python, FastAPI, PostgreSQL, Redis, and Docker. Skilled in REST API design, third-party integrations (WhatsApp Business, Meta Cloud API), vector search, and workflow automation for scalable, real-world AI solutions.",
 };
 
 export const experience = [
@@ -21,11 +21,10 @@ export const experience = [
     period: "Mar 2026 – Present",
     current: true,
     points: [
-      "Build and maintain Python/FastAPI backend services, REST APIs, and LLM-based workflows for AI applications.",
-      "Implement semantic search using PostgreSQL and pgvector to improve retrieval over keyword-based search.",
-      "Develop third-party API integrations and Redis-backed asynchronous workflows within Dockerized services.",
+      "Built agentic AI and full-stack applications using Python, FastAPI, React, REST APIs, PostgreSQL/pgvector, and LLM orchestration frameworks, improving semantic retrieval workflows and reducing manual data retrieval by 60%.",
+      "Designed LangGraph-based multi-agent workflows with human-in-the-loop guardrails, and integrated WhatsApp Business/Meta Cloud APIs with Redis-backed asynchronous tasks and Dockerized backend services.",
     ],
-    tech: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Redis", "Docker", "REST APIs"],
+    tech: ["Python", "FastAPI", "React", "LangGraph", "PostgreSQL", "pgvector", "Redis", "Docker", "REST APIs"],
   },
   {
     role: "Data Science Trainee",
@@ -34,8 +33,8 @@ export const experience = [
     period: "Jun 2025 – Feb 2026",
     current: false,
     points: [
-      "Built classification and predictive analytics models in Python (Pandas, NumPy) on real-world datasets as part of capstone projects.",
-      "Applied NLP and computer vision techniques in training projects and presented results through interactive Streamlit dashboards.",
+      "Delivered capstone projects applying classification and predictive analytics techniques in Python (Pandas, NumPy) to real-world datasets, translating raw data into actionable business insights.",
+      "Applied NLP and computer vision techniques within training projects and presented findings through interactive Streamlit dashboards.",
     ],
     tech: ["Python", "Pandas", "NumPy", "NLP", "Computer Vision", "Streamlit"],
   },
@@ -46,7 +45,7 @@ export const experience = [
     period: "Sep 2024 – Apr 2025",
     current: false,
     points: [
-      "Deployed PLC, DCS, and SCADA solutions, managing I/O databases, alarm configuration, testing, and commissioning for industrial process automation.",
+      "Deployed PLC, DCS, and SCADA solutions, managing I/O databases, alarm configuration, testing, and commissioning to ensure reliable process automation and on-time project delivery.",
     ],
     tech: ["PLC", "DCS", "SCADA", "Industrial Automation"],
   },
@@ -57,27 +56,27 @@ export const projects = [
     title: "Agentic Learning Coach",
     featured: true,
     description:
-      "AI-powered learning platform that builds personalized study plans through a 5-stage multi-agent LLM pipeline with deterministic code-based scoring.",
+      "Multi-agent AI learning platform with a FastAPI backend and React frontend, orchestrating five cooperating LLM agents (skill analysis, planning, question generation, evaluation, feedback) via Groq API to generate adaptive, day-by-day study plans with Pydantic validation and deterministic code-based scoring.",
     tech: ["Python", "FastAPI", "React", "LangGraph", "Groq API", "Pydantic"],
     github: "https://github.com/anagha-m01/agentic-learning-coach",
     demo: "https://agentic-learning-coach.vercel.app",
   },
   {
-    title: "Customer Conversion Prediction",
+    title: "DocQuery",
     featured: false,
     description:
-      "Machine learning classification model predicting customer conversion with 95% campaign-targeting accuracy through exploratory data analysis and feature engineering.",
-    tech: ["Python", "scikit-learn", "Pandas", "NumPy", "EDA"],
+      "LLM-powered document extraction application using FastAPI, React, PostgreSQL/pgvector, Groq LLMs, and sentence-transformers. Supports PDF, Excel, and CSV uploads with schema-based re-extraction using vector embeddings and cosine-similarity retrieval to output structured JSON.",
+    tech: ["FastAPI", "React", "PostgreSQL", "pgvector", "Groq LLM", "sentence-transformers"],
     github: null,
     demo: null,
   },
   {
-    title: "Mosquito Wrecker",
+    title: "Customer Conversion Prediction",
     featured: false,
     description:
-      "Interactive vision-based game tracking hand gestures in real time using computer vision and landmark detection.",
-    tech: ["Python", "OpenCV", "MediaPipe", "Pygame"],
-    github: "https://github.com/anagha-m01/mosquito-wrecker",
+      "Machine learning classification models to predict customer conversion, achieving 95% campaign-targeting accuracy through end-to-end data preprocessing and exploratory analysis to uncover key conversion drivers.",
+    tech: ["Python", "scikit-learn", "Pandas", "NumPy", "EDA"],
+    github: null,
     demo: null,
   },
 ];
@@ -97,11 +96,17 @@ export const flagshipProject = {
     { id: "evaluator", label: "Evaluator", note: "Code-based, deterministic scoring" },
     { id: "feedback", label: "Feedback Agent", note: "Turns results into guidance" },
   ],
-  tech: ["React", "FastAPI", "Groq API", "Pydantic"],
+  tech: ["React", "FastAPI", "Groq API", "Pydantic", "LangGraph"],
   github: "https://github.com/anagha-m01/agentic-learning-coach",
 };
 
 export const otherProjects = [
+  {
+    name: "DocQuery – LLM-Powered Document Extraction",
+    description:
+      "Built a document extraction application using FastAPI, React, PostgreSQL/pgvector, Groq LLMs, and sentence-transformers, supporting PDF, Excel, and CSV uploads with schema-based re-extraction using vector embeddings into structured JSON format.",
+    tech: ["FastAPI", "React", "PostgreSQL", "pgvector", "Groq LLM", "sentence-transformers"],
+  },
   {
     name: "Customer Conversion Prediction in Digital Marketing",
     description:
@@ -114,29 +119,31 @@ export const skillCategories = [
   {
     title: "AI & Generative AI",
     skills: [
-      "Multi-Agent Systems",
-      "LangGraph",
       "LLMs",
       "RAG",
-      "LangChain",
+      "Multi-Agent Systems",
+      "LangGraph",
+      "Guardrails & HITL",
       "Prompt Engineering",
+      "LangChain",
+      "Vector Databases (Pinecone, pgvector)",
       "Semantic Search",
-      "pgvector",
-      "Pinecone",
+      "NLP",
+      "Computer Vision",
     ],
   },
   {
     title: "Machine Learning & Data",
     skills: [
+      "scikit-learn",
       "TensorFlow",
       "Keras",
-      "scikit-learn",
-      "Computer Vision",
-      "NLP",
-      "OpenCV",
-      "MediaPipe",
       "Pandas",
       "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "OpenCV",
+      "MediaPipe",
       "Streamlit",
     ],
   },
@@ -145,14 +152,15 @@ export const skillCategories = [
     skills: [
       "Python",
       "FastAPI",
-      "REST APIs",
       "React",
-      "PostgreSQL",
-      "Docker",
+      "REST APIs",
+      "PostgreSQL (pgvector)",
       "Redis",
+      "Docker",
       "Elasticsearch",
-      "Git",
+      "MySQL",
       "WhatsApp Business API",
+      "Git",
     ],
   },
 ];
@@ -183,4 +191,5 @@ export const certifications = [
     url: "https://coursera.org/verify/LLE6QR5898S3",
   },
 ];
+
 

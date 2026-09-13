@@ -16,7 +16,7 @@ export default function Hero() {
         >
           <p className="font-mono text-[13px] text-teal-soft mb-5">
             <span className="text-ink-mute">$</span> whoami{" "}
-            <span className="text-ink-soft">→ AI/ML Engineer, Kochi/Thrissur</span>
+            <span className="text-ink-soft">→ {profile.role}, Kochi/Thrissur</span>
           </p>
 
           <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-[5.5rem] font-semibold leading-[0.95] tracking-tight text-ink">
@@ -24,12 +24,11 @@ export default function Hero() {
           </h1>
 
           <p className="mt-3 font-display text-[1.3rem] sm:text-[1.5rem] text-ink-soft">
-            AI/ML Engineer
+            {profile.role}
           </p>
 
           <p className="mt-6 max-w-xl text-[16px] leading-relaxed text-ink-soft">
-            Building practical AI/ML applications and backend systems with
-            Python.
+            Building agentic AI applications, multi-agent LLM workflows, and backend systems with Python.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -42,6 +41,8 @@ export default function Hero() {
             </a>
             <a
               href="/Anagha_M_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-md border border-hair px-5 py-2.5 text-[14px] text-ink-soft hover:text-ink hover:border-ink-mute transition-colors"
             >
               <FileText size={15} />
