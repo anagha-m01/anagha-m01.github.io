@@ -10,7 +10,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/anagha-m01",
   github: "https://github.com/anagha-m01",
   summary:
-    "AI/ML Engineer experienced in agentic AI applications, multi-agent LLM workflows with LangGraph orchestration, RAG systems, and production backend services using Python, FastAPI, PostgreSQL, Redis, and Docker. Skilled in REST API design, third-party integrations (WhatsApp Business, Meta Cloud API), vector search, and workflow automation for scalable, real-world AI solutions.",
+    "AI/ML Engineer experienced in agentic AI applications, multi-agent LLM workflows with LangGraph orchestration, RAG systems, and production backend services using Python, FastAPI, PostgreSQL, Redis, and Docker. Skilled in REST API design, vector search, and workflow automation for scalable, real-world AI solutions.",
 };
 
 export const experience = [
@@ -65,18 +65,18 @@ export const projects = [
     title: "DocQuery",
     featured: false,
     description:
-      "LLM-powered document extraction application using FastAPI, React, PostgreSQL/pgvector, Groq LLMs, and sentence-transformers. Supports PDF, Excel, and CSV uploads with schema-based re-extraction using vector embeddings and cosine-similarity retrieval to output structured JSON.",
+      "LLM-powered document extraction and chat application using FastAPI, React, PostgreSQL/pgvector, Groq LLMs, and sentence-transformers. Supports PDF, Excel, and CSV uploads with schema-based re-extraction and cosine-similarity retrieval into structured JSON.",
     tech: ["FastAPI", "React", "PostgreSQL", "pgvector", "Groq LLM", "sentence-transformers"],
-    github: null,
-    demo: null,
+    github: "https://github.com/anagha-m01/docquery",
+    demo: "https://docquery-weld.vercel.app",
   },
   {
-    title: "Customer Conversion Prediction",
+    title: "ConvertIQ",
     featured: false,
     description:
-      "Machine learning classification models to predict customer conversion, achieving 95% campaign-targeting accuracy through end-to-end data preprocessing and exploratory analysis to uncover key conversion drivers.",
-    tech: ["Python", "scikit-learn", "Pandas", "NumPy", "EDA"],
-    github: null,
+      "Full-stack customer conversion prediction and marketing analytics platform built with FastAPI, React, and scikit-learn on 8,000 multi-channel records. Handled 7:1 class imbalance via SMOTE and AdaBoost, achieving 89% accuracy (72% balanced accuracy, 0.73 Macro F1) with Pydantic validation.",
+    tech: ["FastAPI", "React", "scikit-learn", "SMOTE", "AdaBoost", "Python", "Pydantic"],
+    github: "https://github.com/anagha-m01/convertiq",
     demo: null,
   },
 ];
@@ -106,12 +106,16 @@ export const otherProjects = [
     description:
       "Built a document extraction application using FastAPI, React, PostgreSQL/pgvector, Groq LLMs, and sentence-transformers, supporting PDF, Excel, and CSV uploads with schema-based re-extraction using vector embeddings into structured JSON format.",
     tech: ["FastAPI", "React", "PostgreSQL", "pgvector", "Groq LLM", "sentence-transformers"],
+    github: "https://github.com/anagha-m01/docquery",
+    demo: "https://docquery-weld.vercel.app",
   },
   {
-    name: "Customer Conversion Prediction in Digital Marketing",
+    name: "ConvertIQ – Customer Conversion Prediction in Digital Marketing",
     description:
-      "A machine learning classification project for predicting customer conversion, covering preprocessing, exploratory analysis, model training, and evaluation.",
-    tech: ["Python", "scikit-learn", "Pandas", "NumPy", "EDA"],
+      "Built a full-stack prediction app using FastAPI, React, and scikit-learn on 8,000 multi-channel marketing records, addressing 7:1 class imbalance via SMOTE and AdaBoost (89% accuracy, 72% balanced accuracy, 0.73 Macro F1) with Pydantic validation.",
+    tech: ["FastAPI", "React", "Python", "scikit-learn", "SMOTE", "AdaBoost", "Pydantic"],
+    github: "https://github.com/anagha-m01/convertiq",
+    demo: null,
   },
 ];
 
@@ -145,12 +149,14 @@ export const skillCategories = [
       "OpenCV",
       "MediaPipe",
       "Streamlit",
+      "Google Colab",
     ],
   },
   {
     title: "Backend & Infrastructure",
     skills: [
       "Python",
+      "SQL",
       "FastAPI",
       "React",
       "REST APIs",
@@ -160,6 +166,7 @@ export const skillCategories = [
       "Elasticsearch",
       "MySQL",
       "WhatsApp Business API",
+      "n8n",
       "Git",
     ],
   },
